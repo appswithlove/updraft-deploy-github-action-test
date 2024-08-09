@@ -10,7 +10,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
       - name: Test upload action
-        uses: appswithlove/updraft-deploy-github-action@50e9999df1e4551a01623f34e7865552fdba1a8e
+        uses: appswithlove/updraft-deploy-github-action@a5420da6cb43f3303af87ab367e709e16926dfca
         with:
           api_key: ${{ secrets.TEST_API_KEY }}
           app_key: ${{ secrets.TEST_APP_KEY }}
