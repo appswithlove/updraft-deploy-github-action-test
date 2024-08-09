@@ -9,6 +9,10 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
+      - name: test
+        run: curl --version
+      - name: test2
+        run: curl -v -F whats_new="" -F build_type="github-action" -F app=@test/test.apk -X PUT https://getupdraft.com/api/app_upload/${{ secrets.TEST_APP_KEY }}/${{ secrets.TEST_API_KEY }}/
       - name: Test upload action
         uses: appswithlove/updraft-deploy-github-action@f97c01b807375074754892b4d8d3314e498a0c45
         with:
