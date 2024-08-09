@@ -7,6 +7,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - name: Test
+        run: ls -la
       - name: Test upload action
         uses: appswithlove/updraft-deploy-github-action@50e9999df1e4551a01623f34e7865552fdba1a8e
         with:
