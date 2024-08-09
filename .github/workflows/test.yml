@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test upload action
-        uses: appswithlove/updraft-deploy-github-action@0f21b5599c785f52273f007f46dd8e653f9f899c
+        uses: appswithlove/updraft-deploy-github-action@50e9999df1e4551a01623f34e7865552fdba1a8e
         with:
           api_key: ${{ secrets.TEST_API_KEY }}
           app_key: ${{ secrets.TEST_APP_KEY }}
